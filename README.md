@@ -1,75 +1,46 @@
-# Debugging Assignment Files
+# Bug Fixes  
 
-Welcome to the Debugging Assignment repository! This repository contains the resources for the debugging assignment in the Web Design Tools course. Students will debug the provided HTML and CSS files to meet W3C standards and accessibility guidelines.
+## HTML  
 
-## Files Included
+1. <!-- <html> --> - original tag missing "lang" declaration; line 2  
+<html lang="en"> - fix  
 
-1. **index.html**
-   - Contains intentional errors for students to identify and fix.
-   - Errors include issues with HTML syntax, structure, accessibility, and semantic correctness.
+2. <!-- <meta> --> - original tag missing "charset" tag; line 6  
+<meta charset="UTF-8"> - fix  
 
-2. **style.css**
-   - Includes intentional errors related to CSS syntax, selectors, and properties.
+3. <!-- <img src="easter-bunny-150-profile.png"> --> - original missing "images" folder and alt text; line 14  
+<img src="images/easter-bunny-150-profile.png" alt="Easter Bunny"> - fix  
 
-3. **Expected Site Design**
-   - Includes a screenshot of the error-free page (`images/expected-site-design.png`) to serve as a reference for students.
+4. <!-- <h4>The Easter Bunny</h4> --> - original skips h3 in hierarchy; line 46  
+<h3> The Easter Bunny </h3> - fix  
 
-### File Structure
-```
-debugging-html-css/
-├── css/
-│   ├── style.css
-│   ├── layout.css
-├── images/
-│   ├── easter-bunny-150-profile.png
-│   ├── expected-site-design.png
-├── index.html
-├── README.md
-```
+5. <!-- <h5>Rabbits and Hares</h5> --> - original skips h3 and h4 in hierarchy; line 50  
+<h3> Rabbits and Hares </h3> - fix  
 
-## Objective
+6. <!-- <br><br><br><br><br> --> - original unnecessary break tags; line 57  
+fix comment out tags  
 
-The goal of this assignment is to:
-- Develop debugging skills by identifying and correcting errors in HTML and CSS.
-- Improve familiarity with W3C standards and accessibility best practices.
-- Practice using debugging tools and validators to ensure standards-compliant code.
-- Learn to document errors and resolutions in a structured manner.
+7. <!-- <h3>Enough Content --> - original missing closing h3 tag; line 62  
+<h3>Enough Content</h3> - fix  
 
-## Instructions
+8. <!-- <link rel="stylesheet" href="layout.css"> --> - original missing "css" folder declaration line 11  
+<link rel="stylesheet" href="css/layout.css"> - fix  
 
-1. **Clone this repository** to your local machine:
-   ```bash
-   git clone <repository-url>
-   ```
+## CSS  
 
-2. Open the `index.html` and `style.css` files in your favorite text editor or IDE (e.g., Visual Studio Code).
+1. <!-- color: #B2; --> - original unfinished hexadecimal value; line 33  
+color: #B2D732; - fix  
 
-3. Identify the errors in both files. Use tools like:
-   - [W3C HTML Validator](https://validator.w3.org/)
-   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-   - [Wave Accessibility Checker](https://wave.webaim.org/)
+2. <!-- color: #FE27122; --> - orignial incorrect hexadecimal value; line 86  
+color: #FE2712; - fix  
 
-4. Resolve all identified errors in the `index.html` and `style.css` files by:
-   - Commenting out the original error code.
-   - Adding the corrected code directly below the commented-out error code.
+3. <!-- line-height: 1.35me; --> - original typo of em; line 67  
+line-height: 1.35em; - fix  
 
-5. Once all errors are corrected:
-   - Commit your changes and push them to your own GitHub repository.
-   - Deploy the corrected project to GitHub Pages.
+4. <!-- font-size: 5 vw; --> - original unrecognized font size value; line 44  
+font-size: 5vw; - fix  
 
-6. Submit your GitHub repository link and GitHub Pages link as instructed in the course.
+5. <!-- background-color: #B2D732; --> - original background color override incorrect line 8  
+background-color: whitesmoke; - fix  
 
-## Tools and Resources
-
-- [W3C HTML Validator](https://validator.w3.org/)
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-- [Wave Accessibility Checker](https://wave.webaim.org/)
-- [MDN Web Docs](https://developer.mozilla.org/)
-
-## License
-
-This repository is for educational purposes only. All content is copyrighted by the course instructor and may not be distributed without permission.
-
----
-
-Happy debugging!
+6. 
