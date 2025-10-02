@@ -39,8 +39,3 @@ line-height: 1.35em; - fix
 
 4. <!-- font-size: 5 vw; --> - original unrecognized font size value; line 44  
 font-size: 5vw; - fix  
-
-5. <!-- background-color: #B2D732; --> - original background color override incorrect line 8  
-background-color: whitesmoke; - fix  
-
-6. 
